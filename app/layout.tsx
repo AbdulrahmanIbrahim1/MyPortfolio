@@ -13,6 +13,11 @@ export const metadata: Metadata = {
   description:
     "Professional portfolio of Abdelrahman Ibrahim, Computer Science graduate and Junior Cybersecurity Engineer specializing in backend development, frontend development, and cybersecurity.",
   generator: "v0.app",
+  icons: {
+    icon: "/online-resume.png", // الأيقونة الرئيسية
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png", // لو عايز أيقونة للـ iOS
+  },
 }
 
 export default function RootLayout({
