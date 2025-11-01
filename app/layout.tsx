@@ -9,14 +9,75 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Abdelrahman Ibrahim - Cybersecurity Engineer & Full-Stack Developer",
+  title: "Abdelrahman Ibrahim | Cybersecurity Engineer & Full-Stack Developer",
   description:
-    "Professional portfolio of Abdelrahman Ibrahim, Computer Science graduate and Junior Cybersecurity Engineer specializing in backend development, frontend development, and cybersecurity.",
-  generator: "v0.app",
+    "Explore Abdelrahman Ibrahim's professional portfolio — a Computer Science graduate passionate about cybersecurity, backend, and full-stack web development. Discover projects, achievements, and contact information.",
+  keywords: [
+    "Abdelrahman Ibrahim",
+    "Cybersecurity Engineer",
+    "Full-Stack Developer",
+    "Portfolio",
+    "Next.js Developer",
+    "Web Security",
+    "Computer Science Graduate", "react developer", "frontend developer", "backend developer",
+    "عبدالرحمن ابراهيم ",
+    "مهندس امن سيبراني",
+    "مطور ويب متكامل",
+    "محفظة مشاريع",
+    "تطوير الويب",
+    "تطوير الواجهة الخلفية",
+    "مشاريع البرمجة",
+    "مهارات البرمجة",
+    "اتصل بي",
+  ],
+  authors: [{ name: "Abdelrahman Ibrahim", url: "https://abdelrahman-ibrahim11.vercel.app" }],
+  metadataBase: new URL("https://abdelrahman-ibrahim11.vercel.app"),
+  openGraph: {
+    title: "Abdelrahman Ibrahim | Cybersecurity Engineer & Full-Stack Developer",
+    description:
+      "Portfolio showcasing Abdelrahman Ibrahim's cybersecurity projects, web development skills, and achievements.",
+    url: "https://abdelrahman-ibrahim11.vercel.app",
+    siteName: "Abdelrahman Ibrahim Portfolio",
+    images: [
+      {
+        url: "https://abdelrahman-ibrahim11.vercel.app/prof3.png",
+        width: 1200,
+        height: 630,
+        alt: "Abdelrahman Ibrahim Portfolio",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Abdelrahman Ibrahim | Cybersecurity Engineer & Full-Stack Developer",
+    description:
+      "Explore Abdelrahman Ibrahim's cybersecurity and web development portfolio.",
+    images: ["https://abdelrahman-ibrahim11.vercel.app/prof3.png"],
+    creator: "@abdelrahman_ibrahim",
+  },
+  alternates: {
+    canonical: "https://abdelrahman-ibrahim11.vercel.app",
+  },
   icons: {
-    icon: "/online-resume.png", // الأيقونة الرئيسية
+    icon: "/online-resume.png",
     shortcut: "/favicon.ico",
-    apple: "/apple-touch-icon.png", // لو عايز أيقونة للـ iOS
+    apple: "/apple-touch-icon.png",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    google: "",
   },
 }
 
@@ -29,7 +90,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased`}>
         <Suspense fallback={null}>
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem >
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <ScrollProgress />
             {children}
           </ThemeProvider>
